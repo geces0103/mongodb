@@ -30,6 +30,7 @@
 - [Mongo DB](https://docs.mongodb.com/guides/)
 - [Lombok](https://objectcomputing.com/resources/publications/sett/january-2010-reducing-boilerplate-code-with-project-lombok)
 - Swagger (http://localhost:8080/case/swagger-ui.html)
+- Docker
 
 ## Tools
 - Eclipse or IntelliJ IDEA 
