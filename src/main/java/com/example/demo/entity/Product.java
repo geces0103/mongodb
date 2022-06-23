@@ -32,6 +32,6 @@ public class Product implements Comparable<Product>{
 
     @Override
     public int compareTo(Product o) {
-        return 0;
+        return this.name.compareTo(o.name);
     }
 }
