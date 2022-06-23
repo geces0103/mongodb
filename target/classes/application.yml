@@ -1,0 +1,25 @@
+project:
+  version: '0.0.1-SNAPSHOT'
+
+api:
+  version: /v1
+
+server:
+  servlet:
+    context-path: /case
+
+spring:
+  jpa:
+    database: H2
+    show-sql: false
+
+config:
+  retry:
+    maxAttempts: 3
+    maxDelay: 4000
+    multiplier: 0.3
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

@@ -1,0 +1,13 @@
+com\example\demo\service\ProductService.class
+com\example\demo\entity\transformer\AbstractTransformer.class
+com\example\demo\entity\Product$ProductBuilder.class
+com\example\demo\controller\ProductController.class
+com\example\demo\entity\transformer\ProductTransformer.class
+com\example\demo\service\dto\ProductDTO$ProductDTOBuilder.class
+com\example\demo\controller\dto\ProductRequestDTO.class
+com\example\demo\SpringBootMongoDBApplication.class
+com\example\demo\repository\ProductRepository.class
+com\example\demo\service\dto\ProductDTO.class
+com\example\demo\config\ModelMapperConfig.class
+com\example\demo\controller\dto\ProductRequestDTO$ProductRequestDTOBuilder.class
+com\example\demo\entity\Product.class

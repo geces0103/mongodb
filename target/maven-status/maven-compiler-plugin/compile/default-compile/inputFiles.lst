@@ -1,0 +1,10 @@
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\SpringBootMongoDBApplication.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\entity\transformer\AbstractTransformer.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\service\ProductService.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\controller\ProductController.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\config\ModelMapperConfig.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\controller\dto\ProductRequestDTO.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\repository\ProductRepository.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\service\dto\ProductDTO.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\entity\Product.java
+C:\Users\gabriel.campos\Documents\Desenvolvimento\mongo\spring-boot-mongodb-crud\src\main\java\com\example\demo\entity\transformer\ProductTransformer.java

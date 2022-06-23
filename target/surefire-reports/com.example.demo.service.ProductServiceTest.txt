@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.service.ProductServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.684 s <<< FAILURE! - in com.example.demo.service.ProductServiceTest
+findByIdWithInvalidIdShouldThrowException  Time elapsed: 0.027 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <"Could not find product: 1">
+to be equal to:
+ <"Could not find Product: 1">
+but was not.
+	at com.example.demo.service.ProductServiceTest.findByIdWithInvalidIdShouldThrowException(ProductServiceTest.java:136)
+
+updateWhithInvalidProductIdShouldThrowException  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <"Could not find product: 1">
+to be equal to:
+ <"Could not find Product: 1">
+but was not.
+	at com.example.demo.service.ProductServiceTest.updateWhithInvalidProductIdShouldThrowException(ProductServiceTest.java:60)
+
