@@ -10,6 +10,10 @@
 - database: jdbc:mongodb
 - product: sa
 - pwd:
+- Para testes utilizar o localhost:8080/case/v1/products
+- para o findByName -> localhost:8080/case/v1/products/name?name={name} sem aspas
+- Para o findById -> localhost:8080/case/v1/products/id?id={id}
+- Para o getAll -> localhost:8080/case/v1/products/all
 
 ### Desafio
 

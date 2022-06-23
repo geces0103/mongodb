@@ -119,10 +119,10 @@ class ProductServiceTest extends AbstractTest {
     void findByNameWithValidIdShouldReturnDTO() {
         Product product = createProduct();
 
-        when(productRepository.findByName(anyString())).thenReturn(Optional.of(product));
+        when(productRepository.findByName(anyString())).thenReturn(List.of(product));
 
-        ProductDTO dto = productService.findByName(ANY_NAME);
-        assertThat(dto.getName()).isEqualTo(product.getName());
+        List<ProductDTO> dto = productService.findByName(ANY_NAME);
+        assertThat(dto.get(0).getName()).isEqualTo(product.getName());
 
         verify(productRepository).findByName(anyString());
     }
@@ -151,7 +151,7 @@ class ProductServiceTest extends AbstractTest {
 
     @Test
     void findByNameWithInvalidIdShouldThrowException() {
-        doReturn(Optional.empty()).when(productRepository).findByName(anyString());
+        doReturn(new ArrayList<>()).when(productRepository).findByName(anyString());
 
         NotFoundException ex = assertThrows(NotFoundException.class, () -> productService.findByName("1"));
         assertThat(ex.getMessage()).isEqualTo("Could not find product: 1");

@@ -35,13 +35,13 @@ public class ProductController {
         return ResponseEntity.ok(this.productService.update(dto));
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<ProductDTO> getProductById(@PathVariable String id) {
+    @GetMapping("/id")
+    public ResponseEntity<ProductDTO> getProductById(@RequestParam(value = "id") String id) {
         return ResponseEntity.ok(this.productService.findById(id));
     }
 
-    @GetMapping("/{name}")
-    public ResponseEntity<ProductDTO> getProductByName(@PathVariable String name) {
+    @GetMapping("/name")
+    public ResponseEntity<List<ProductDTO>> getProductByName(@RequestParam(value="name") String name) {
         return ResponseEntity.ok(this.productService.findByName(name));
     }
 
@@ -50,7 +50,7 @@ public class ProductController {
         this.productService.deleteById(id);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<ProductDTO>> getAll() {
         return ResponseEntity.ok(this.productService.findAll());
     }

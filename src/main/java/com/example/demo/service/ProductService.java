@@ -10,6 +10,8 @@ import com.mongodb.MongoException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import java.net.http.HttpClient;
 import java.sql.SQLException;
@@ -78,10 +80,15 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-    public ProductDTO findByName(String name) {
-        return productRepository.findByName(name)
-                .map(productTransformer::toDTO)
-                .orElseThrow(() -> new NotFoundException("Could not find product: " + name));
+    public List<ProductDTO> findByName(String name) {
+
+        var list = productRepository.findByName(name).stream()
+                .map(productTransformer::toDTO).collect(Collectors.toList());
+
+        if (!CollectionUtils.isEmpty(list)) {
+            return list;
+        }
+        throw new NotFoundException("Could not find product: " + name);
     }
 
 }

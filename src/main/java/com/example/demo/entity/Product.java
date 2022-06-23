@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "products_collection")
-public class Product {
+public class Product implements Comparable<Product>{
 
     @Id
     private String id;
@@ -30,4 +30,8 @@ public class Product {
     @Field(name = "brand")
     private String brand;
 
+    @Override
+    public int compareTo(Product o) {
+        return 0;
+    }
 }
